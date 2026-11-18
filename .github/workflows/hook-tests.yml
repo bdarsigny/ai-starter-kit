@@ -1,0 +1,20 @@
+name: hook tests
+on: [push, pull_request, workflow_dispatch]
+jobs:
+  test:
+    strategy:
+      fail-fast: false
+      matrix:
+        os: [windows-latest, macos-latest]
+    runs-on: ${{ matrix.os }}
+    defaults:
+      run:
+        shell: bash
+    steps:
+      # Mirror Git for Windows' installer default so CRLF problems would show up here.
+      - name: Use Git for Windows default line-ending setting
+        if: runner.os == 'Windows'
+        run: git config --global core.autocrlf true
+      - uses: actions/checkout@v4
+      - name: Hook tests
+        run: bash tests/test_hooks.sh
