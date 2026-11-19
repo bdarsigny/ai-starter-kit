@@ -44,7 +44,7 @@ Other phrases that work: **"start a new project"**, **"join a shared project"**,
   during research you asked for are fine to allow; Claude will say when to expect those.
 - **Connected email:** out of the box, Claude can read a connected Gmail inbox but can't send, draft,
   delete, label or change anything in it. That's deliberate: emails come from strangers, and one could be
-  written to trick Claude into acting on your behalf. The newsletter tool is meant for an inbox used only
+  written to trick Claude into acting on your behalf (prompt injection). The newsletter tool is meant for an inbox used only
   for subscriptions, and it asks first if the connected inbox looks personal.
 - **Want Claude to do more with your email?** You can turn on any of those abilities whenever you're ready.
   Say "I'd like you to be able to draft emails" (or label, archive, send). Claude shows you the exact
