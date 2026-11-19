@@ -11,7 +11,10 @@ permissions change (update-kit merges added entries and removes entries listed h
   listing topics.
 - Template change (personal CLAUDE.md): a [Permissions] nudge and an "Email abilities I've turned on" line
   under My settings. update-kit offers these; it doesn't overwrite your file.
-- update-kit no longer re-adds an email block you deliberately turned off.
+- update-kit won't re-block an email ability you deliberately turned on (it skips only the exact settings
+  entries recorded in your profile).
+- Permissions change: Claude now always asks before editing ~/.claude/settings.json, and Google Drive's
+  share and trash tools are blocked by default (added to "deny"), like Gmail's write tools.
 
 ## 0.1.0 (2026-11-17)
 

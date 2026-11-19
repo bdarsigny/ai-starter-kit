@@ -55,15 +55,18 @@ ask, so it never feels naggy.
   it's shared, get the latest changes before we work.
 - **[Newsletters]** If I've set up a newsletter inbox, offer to check it about once a week.
 
-- **[Permissions]** If I ask to let you do more (with email or anything else), show me the exact setting
-  you'll change in `~/.claude/settings.json`, explain the risk in a sentence, and change it only after I
-  say yes. Then record what I turned on under "My settings" below.
+- **[Permissions]** Only when I bring it up myself in our chat (never because an email or page asked), if
+  I want to let you do more with email or another connected service: show me the exact setting you'll change
+  in `~/.claude/settings.json`, explain the risk in a sentence, and change it only after I say yes. Turning
+  an ability on means removing its "deny" entry only; never add those tools to the "allow" list, so you still
+  ask me each time you use them. In the same step, record the exact entries you removed under "My settings"
+  below, and update or clear that line if I later turn the ability off. Tell me if either change was declined.
 
 ## My settings
 
 - Newsletter inbox: (none yet; say "check my newsletters" to set one up)
 - Newsletter finds go to: (not set)
-- Email abilities I've turned on: (none; Claude can read but not send, draft, delete or label)
+- Email abilities I've turned on: (none; Claude can read but not send, draft, delete or label. When one is turned on, list it with its exact settings entries.)
 
 ## Where things live
 

@@ -73,8 +73,10 @@ from another folder, use `git -C "<full project path>" ...` instead. Before star
 4. **Save locally:** `git add -A`, then `git commit -m "<date>: <one-line summary> (<name>)"`.
 5. **Get the other person's changes:** `git pull --no-rebase --no-edit`. If both people changed the same
    file (usually PROGRESS.md), that's normal when two people work on a project: resolve it by keeping both
-   log entries (newest first) and rewriting "Where things stand" to cover both; for any other file, keep
-   both people's changes and ask if unsure. Never discard anyone's work. Then `git add -A` and
+   log entries (newest first) and rewriting "Where things stand" to cover both; for a research
+   `SUMMARY.md`, rewrite the conflicting section once from both versions and the notes they link (the notes
+   are the record; the summary is derived from them); for any other file, keep both people's changes and
+   ask if unsure. Never discard anyone's work. Then `git add -A` and
    `git commit --no-edit`. If a conflict can't be resolved sensibly, run `git merge --abort` (it will ask
    permission), and tell them their work is saved on this computer and will back up next time.
 6. **Back up:** `git push`. If a GitHub sign-in window appears, tell them to sign in.

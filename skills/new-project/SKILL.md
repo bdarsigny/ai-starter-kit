@@ -22,8 +22,8 @@ that names other people, ask whether one of those people has already started it;
    background; confirm it with them rather than re-asking what it already answers.
 2. **Pick a short folder name** together (lowercase, dashes, no spaces), for example `garden-plan`.
 3. **Create the folder** `AI/projects/<name>/` by copying the templates from `AI/.kit/templates/project/`:
-   `CLAUDE.md`, `PROGRESS.md`, `DECISIONS.md`, `FEEDBACK.md`, plus a `research/` folder with a one-line
-   `research/INDEX.md`. If there's a brief, copy it into the project as `BRIEF.md` unchanged.
+   `CLAUDE.md`, `PROGRESS.md`, `DECISIONS.md`, `FEEDBACK.md`, plus a `research/` folder whose `INDEX.md` contains the single line
+   `# Research topics`. If there's a brief, copy it into the project as `BRIEF.md` unchanged.
 4. **Fill in the placeholders** in those files from the conversation, in the person's words:
    - `{{PROJECT_NAME}}`, `{{GOAL}}`, `{{BACKGROUND}}` (a short summary; if there's a `BRIEF.md`, end with
      "More detail in BRIEF.md"), `{{PEOPLE}}`.

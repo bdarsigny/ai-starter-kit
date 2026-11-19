@@ -43,7 +43,7 @@ get-to-know-you interview. The whole thing takes about an hour. Ask if they're r
 
 Create, inside AI_HOME (skip anything that already exists):
 - `CLAUDE.md`, `PROGRESS.md`, `LESSONS.md`, `IDEAS.md`, copied from `AI_HOME/.kit/templates/personal/`
-- folders `research/` and `projects/`
+- folders `research/` (with an `INDEX.md` containing the single line `# Research topics`) and `projects/`
 - folder `.state/`, and write the contents of `AI_HOME/.kit/VERSION` into `.state/kit-version`
 - a file `.gitignore` containing just `*` (a safety net: the AI folder itself can never be saved to GitHub;
   projects inside it are separate and unaffected)
@@ -87,7 +87,8 @@ them, and don't add an entry twice):
     "ask": [
       "Edit(~/AI/**/CLAUDE.md)", "Write(~/AI/**/CLAUDE.md)",
       "Edit(~/AI/LESSONS.md)", "Write(~/AI/LESSONS.md)",
-      "Edit(~/AI/.kit/**)", "Write(~/AI/.kit/**)"
+      "Edit(~/AI/.kit/**)", "Write(~/AI/.kit/**)",
+      "Edit(~/.claude/settings.json)", "Write(~/.claude/settings.json)"
     ],
     "deny": [
       "Edit(~/AI/**/.git)", "Write(~/AI/**/.git)", "Edit(~/AI/**/.git/**)", "Write(~/AI/**/.git/**)",
@@ -104,7 +105,8 @@ them, and don't add an entry twice):
       "mcp__claude_ai_Gmail__mark_thread_spam", "mcp__claude_ai_Gmail__mark_message_spam",
       "mcp__claude_ai_Gmail__unmark_thread_spam", "mcp__claude_ai_Gmail__unmark_message_spam",
       "mcp__claude_ai_Gmail__apply_sensitive_thread_label", "mcp__claude_ai_Gmail__apply_sensitive_message_label",
-      "mcp__claude_ai_Gmail__create_label", "mcp__claude_ai_Gmail__update_label", "mcp__claude_ai_Gmail__delete_label"
+      "mcp__claude_ai_Gmail__create_label", "mcp__claude_ai_Gmail__update_label", "mcp__claude_ai_Gmail__delete_label",
+      "mcp__claude_ai_Google_Drive__share_file", "mcp__claude_ai_Google_Drive__trash_file"
     ]
   }
 }

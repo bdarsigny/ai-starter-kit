@@ -20,7 +20,7 @@ Research lives in a `research/` folder: `AI/research/` for general interests, or
 ```
 research/
   INDEX.md                  one line per topic: [Topic](topic/SUMMARY.md): one-line description
-  <topic>/                  lowercase-with-dashes, e.g. local-history, hartford-vt
+  <topic>/                  lowercase-with-dashes, e.g. local-history, garden-pests
     SUMMARY.md              what we know about this topic overall, updated every time it's researched
     notes/<question>.md     one note per question asked
     sources/<source>.md     one file per source used, reused by every note that cites it
@@ -33,6 +33,11 @@ Each piece does one job:
   answers come in, and it says where things are still uncertain.
 - **The index** lets the person, or Claude in a later session, see everything that's been researched at a glance.
 
+One exception: a `finds/` folder inside `research/` belongs to the newsletter tool (its picks and EVENTS.md).
+It isn't a topic and is never listed in the index, but read it in step 1 for leads on the topic. Research
+saved in an older format (notes directly in a topic folder, or an index listing questions) is read as-is;
+file new work in the layout above.
+
 ## 1. Understand the question
 
 - Restate the question in one line and ask what it's for if that isn't obvious (a trip, a decision,
@@ -40,11 +45,13 @@ Each piece does one job:
 - Decide where it belongs, by what the question is FOR, not by which folder the session is in: a specific
   project's `research/`, or `AI/research/`. If the project is shared, everyone on it will see the notes; if the
   question might be private (check the Boundaries in their profile), ask first.
-- Pick the topic: read `research/INDEX.md` and reuse an existing topic folder if one fits; otherwise create a
-  new one (lowercase, dashes) and add it to the index.
+- Pick the topic: read `research/INDEX.md` (create it with the single line `# Research topics` if it doesn't
+  exist) and reuse an existing topic folder if one fits; otherwise create a new one (lowercase, dashes) and
+  add it to the index.
 - **Check what's already known first:** read the topic's `SUMMARY.md` and any matching notes. If the answer
-  is mostly there, say so, show it, and research only what's missing or out of date (anything time-sensitive
-  checked more than a few months ago counts as out of date).
+  is mostly there, say so, show it, and research only what's missing or out of date. Judge staleness by each
+  source's Checked date: events and opening hours older than a couple of weeks, prices and closures older
+  than a few months; anything else as the question requires.
 
 ## 2. Plan the sources (say the plan in one or two lines before searching)
 
@@ -65,8 +72,9 @@ ask for their password.
 
 - Use web search and read the actual pages; don't rely on search snippets. Read the person's own files when
   they're relevant.
-- Before creating a source file, check the topic's `sources/` folder: if the source is already there, reuse it
-  (and update its "checked" date if you re-read it).
+- Before creating a source file, check the topic's `sources/` folder and match on the Link or File line, not
+  the file name: if the source is already there, reuse it (and update its Checked date if you re-read it).
+  Sources belong to a topic; if the same source serves another topic, that topic gets its own copy.
 - Rate each source: **High** (primary or authoritative), **Medium** (reputable secondary), **Low** (unverified,
   opinion, or a single unconfirmed mention), with a few words of why.
 - When sources disagree, keep both and say so. Don't quietly pick one.
@@ -103,12 +111,16 @@ Researched: <YYYY-MM-DD>  |  For: <purpose>
 ## Unknown or conflicting
 - What couldn't be confirmed, or where sources disagree.
 ```
-Cite sources by their file name in brackets, so every claim can be traced to a source file.
+Cite sources by their file name in brackets, so every claim can be traced to a source file. If the same
+question is researched again, update its existing note in place (new Researched date); keep anything that
+newer sources overturned under "Unknown or conflicting", saying what replaced it.
 
-**Summary** `SUMMARY.md`: fold the new answer into the topic's overall picture. Keep it organized by theme,
-not by date; mark what's well established, what's likely and what's still open; and end with a "Notes" list
-linking every note in the topic. Rewrite sections as understanding improves rather than stacking new text at
-the bottom.
+**Summary** `SUMMARY.md`: fold the new answer into the topic's overall picture. Before rewriting, read the
+current summary and every note it links: keep every earlier finding unless a newer, better-rated source
+replaces it, and say so when one does. Each claim in the summary carries its [source-name], like the notes.
+Keep it organized by theme, not by date; mark what's well established, what's likely and what's still open;
+and end with a "Notes" list linking every note in the topic. Rewrite sections as understanding improves
+rather than stacking new text at the bottom. The notes are the record; the summary is derived from them.
 
 **Index** `research/INDEX.md`: make sure the topic has its line, and update the one-line description if the
 topic has grown.
