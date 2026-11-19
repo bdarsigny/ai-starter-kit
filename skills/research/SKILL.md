@@ -42,6 +42,8 @@ file new work in the layout above.
 
 - Restate the question in one line and ask what it's for if that isn't obvious (a trip, a decision,
   curiosity, a project). The purpose decides how deep to go and what matters.
+- If filing into a shared project from another folder, get its latest changes first
+  (`git -C "<project path>" pull --no-rebase --no-edit`) so you build on the other person's work.
 - Decide where it belongs, by what the question is FOR, not by which folder the session is in: a specific
   project's `research/`, or `AI/research/`. If the project is shared, everyone on it will see the notes; if the
   question might be private (check the Boundaries in their profile), ask first.
@@ -111,13 +113,14 @@ Researched: <YYYY-MM-DD>  |  For: <purpose>
 ## Unknown or conflicting
 - What couldn't be confirmed, or where sources disagree.
 ```
-Cite sources by their file name in brackets, so every claim can be traced to a source file. If the same
+Name files in lowercase with dashes: a source by its site or title (`vermont-statutes-hartford-charter.md`),
+a note by the question's key words (`hartford-villages.md`). Cite sources by their file name in brackets, so every claim can be traced to a source file. If the same
 question is researched again, update its existing note in place (new Researched date); keep anything that
 newer sources overturned under "Unknown or conflicting", saying what replaced it.
 
 **Summary** `SUMMARY.md`: fold the new answer into the topic's overall picture. Before rewriting, read the
-current summary and every note it links: keep every earlier finding unless a newer, better-rated source
-replaces it, and say so when one does. Each claim in the summary carries its [source-name], like the notes.
+current summary and every note it links: keep every earlier finding unless a newer check of the same source, or a
+newer source rated at least as well, replaces it, and say so when one does. Each claim in the summary carries its [source-name], like the notes.
 Keep it organized by theme, not by date; mark what's well established, what's likely and what's still open;
 and end with a "Notes" list linking every note in the topic. Rewrite sections as understanding improves
 rather than stacking new text at the bottom. The notes are the record; the summary is derived from them.

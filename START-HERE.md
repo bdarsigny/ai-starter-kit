@@ -49,7 +49,7 @@ Other phrases that work: **"start a new project"**, **"join a shared project"**,
 - **Want Claude to do more with your email?** You can turn on any of those abilities whenever you're ready.
   Say "I'd like you to be able to draft emails" (or label, archive, send). Claude shows you the exact
   setting it will change and waits for your OK, then records your choice in your profile so a kit update
-  never quietly turns it back off. Even then, Claude still asks you each time it uses that ability. A sensible order: drafts first (Claude writes, you review and press
+  never quietly turns it back off. Even then, Claude still asks you each time it uses that ability; answer plain Yes, not "don't ask again", to keep it that way. A sensible order: drafts first (Claude writes, you review and press
   send), then organizing (labels, archive), and sending last, if ever.
 - **If Claude says you've reached your limit:** nothing is lost. It resets at the time shown. When you come
   back, say "let's wrap up" if you didn't get to before.

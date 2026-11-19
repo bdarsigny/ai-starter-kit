@@ -115,9 +115,9 @@ them, and don't add an entry twice):
 What this does, to explain in plain words: the startup check runs at the start of each conversation; the
 "allow" list lets Claude do the kit's routine, harmless steps without asking every time (checking the date,
 updating their notes and progress files, web searches); the "ask" list means Claude always checks with them
-before changing their profile, their lessons, any project's main instructions, or the kit itself; the
+before changing their profile, their lessons, any project's main instructions, the kit itself, or Claude's own settings; the
 "deny" list means Claude can never tamper with git's or Claude's own settings inside their AI folder, or
-send, delete or change anything in a connected Gmail inbox, even if an email tries to trick it. Backing up
+send, delete or change anything in a connected Gmail inbox, or share or trash files in a connected Google Drive, even if an email tries to trick it. Backing up
 a shared project to GitHub will still ask each time; Claude will say when to expect that. Reading websites during
 research still asks first; it's fine to allow those (choose the option not to ask again for that site).
 

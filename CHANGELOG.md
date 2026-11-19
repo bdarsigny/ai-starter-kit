@@ -9,7 +9,7 @@ permissions change (update-kit merges added entries and removes entries listed h
 - Research is now kept like a small knowledge base: each topic folder has a running SUMMARY.md, one note per
   question in notes/, and one file per source in sources/ (reused across notes), plus a research INDEX.md
   listing topics.
-- Template change (personal CLAUDE.md): a [Permissions] nudge and an "Email abilities I've turned on" line
+- Template change (personal CLAUDE.md): a [Permissions] nudge and an "Abilities I've turned on" line
   under My settings. update-kit offers these; it doesn't overwrite your file.
 - update-kit won't re-block an email ability you deliberately turned on (it skips only the exact settings
   entries recorded in your profile).

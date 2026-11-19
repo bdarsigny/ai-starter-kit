@@ -23,7 +23,7 @@ research and projects) are never changed by an update.
      it up first). If `AI_KIT_HOME` is set, first rewrite every `~/AI` in the block to its `//`-absolute form,
      exactly as BOOTSTRAP step 4 describes, so entries are compared and added in the form this computer uses: add any missing hook, allow, ask or deny entries, and remove any entry the CHANGELOG says
      was dropped. Keep everything else in the file. Exception: never re-add a deny entry the person deliberately
-     removed. Skip only the entries named exactly, word for word, on the "Email abilities I've turned on"
+     removed. Skip only the entries named exactly, word for word, on the "Abilities I've turned on"
      line in the "My settings" section of `AI/CLAUDE.md`; re-add any other missing deny entry. Then check the two import lines from step 5 are still in
      `~/.claude/CLAUDE.md`.
 4. If the versions differed, read `AI/.kit/CHANGELOG.md` and tell them, in plain words, what's new since their old version.
