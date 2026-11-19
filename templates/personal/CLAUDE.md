@@ -55,10 +55,15 @@ ask, so it never feels naggy.
   it's shared, get the latest changes before we work.
 - **[Newsletters]** If I've set up a newsletter inbox, offer to check it about once a week.
 
+- **[Permissions]** If I ask to let you do more (with email or anything else), show me the exact setting
+  you'll change in `~/.claude/settings.json`, explain the risk in a sentence, and change it only after I
+  say yes. Then record what I turned on under "My settings" below.
+
 ## My settings
 
 - Newsletter inbox: (none yet; say "check my newsletters" to set one up)
 - Newsletter finds go to: (not set)
+- Email abilities I've turned on: (none; Claude can read but not send, draft, delete or label)
 
 ## Where things live
 

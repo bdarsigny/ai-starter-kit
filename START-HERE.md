@@ -42,9 +42,15 @@ Other phrases that work: **"start a new project"**, **"join a shared project"**,
 - **When to click Deny:** after setup, if Claude asks to send an email, post something, or open a website you
   didn't ask about, click **Deny** and ask why. Backing up a shared project to GitHub and reading websites
   during research you asked for are fine to allow; Claude will say when to expect those.
-- **Connected email:** Claude can never send, delete or change anything in a connected Gmail inbox; the kit
-  blocks it. The newsletter tool is meant for an inbox used only for subscriptions, and it asks first if the
-  connected inbox looks personal.
+- **Connected email:** out of the box, Claude can read a connected Gmail inbox but can't send, draft,
+  delete, label or change anything in it. That's deliberate: emails come from strangers, and one could be
+  written to trick Claude into acting on your behalf. The newsletter tool is meant for an inbox used only
+  for subscriptions, and it asks first if the connected inbox looks personal.
+- **Want Claude to do more with your email?** You can turn on any of those abilities whenever you're ready.
+  Say "I'd like you to be able to draft emails" (or label, archive, send). Claude shows you the exact
+  setting it will change and waits for your OK, then records your choice in your profile so a kit update
+  never quietly turns it back off. A sensible order: drafts first (Claude writes, you review and press
+  send), then organizing (labels, archive), and sending last, if ever.
 - **If Claude says you've reached your limit:** nothing is lost. It resets at the time shown. When you come
   back, say "let's wrap up" if you didn't get to before.
 - **If Claude's app asks whether to allow using files from your AI folder,** say yes.

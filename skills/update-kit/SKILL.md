@@ -22,7 +22,9 @@ research and projects) are never changed by an update.
    - Merge the whole settings block from `AI/.kit/BOOTSTRAP.md` step 4 into `~/.claude/settings.json` (back
      it up first). If `AI_KIT_HOME` is set, first rewrite every `~/AI` in the block to its `//`-absolute form,
      exactly as BOOTSTRAP step 4 describes, so entries are compared and added in the form this computer uses: add any missing hook, allow, ask or deny entries, and remove any entry the CHANGELOG says
-     was dropped. Keep everything else in the file. Then check the two import lines from step 5 are still in
+     was dropped. Keep everything else in the file. Exception: never re-add a deny entry for something the
+     person deliberately turned on; check "Email abilities I've turned on" (and any similar line) in the
+     "My settings" section of `AI/CLAUDE.md`, and skip those entries. Then check the two import lines from step 5 are still in
      `~/.claude/CLAUDE.md`.
 4. If the versions differed, read `AI/.kit/CHANGELOG.md` and tell them, in plain words, what's new since their old version.
 5. If the changelog says a template changed (for example new house rules or nudges in the personal
