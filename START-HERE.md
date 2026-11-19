@@ -1,48 +1,59 @@
 # Start here
 
-Welcome! This kit sets up Claude on your computer with a few good habits built in: it remembers who you are
-and what you're working on, it does careful research with sources you can check, and it saves your progress
-so every conversation picks up where the last one left off.
+This kit turns Claude into a working partner that remembers you and your projects. Out of the box, every
+conversation with Claude starts from scratch. With the kit, Claude knows who you are and how you like to
+work, picks up where you left off, researches with sources you can check, and keeps a running record of
+decisions and lessons. That record builds up over time instead of disappearing into old chats.
 
-You won't need to type any commands. Claude does the technical parts and explains as it goes.
+## Before you start
 
-## What you need first (about 20 minutes, once)
+You should already have these from the prep checklist (if not, see the end of this page):
+- Claude Pro, and the Claude desktop app installed and signed in
+- Git installed (Windows: Git for Windows)
+- A GitHub account, if you'll share a project with someone
 
-1. **Git** (the tool that saves versions of your work):
-   - **Windows:** download "Git for Windows" from git-scm.com and install it. The default options are fine on
-     every screen.
-   - **Mac:** nothing to do now, unless the person who gave you this kit says your kit link is private; then
-     also install "Git Credential Manager" for Mac first (they'll send you the link).
-2. **A Claude Pro subscription.** Sign up at claude.ai with your own email (about $20/month).
-3. **The Claude desktop app.** Download it from claude.ai/download, install it and sign in. (If you installed
-   it before Git, close it and open it again.)
-4. **A free GitHub account at github.com, only if you'll share a project with someone** (or if the person who
-   gave you this kit asks for your username). GitHub keeps a private, backed-up copy of a shared project.
-   GitHub may ask you to set up a second way to confirm it's you (a phone app or text codes); that's normal,
-   and worth doing with help. If you're sent an invitation email, accept it within a week (they expire).
+## Setup (about an hour, including a short interview)
 
-## Setting up (about an hour, including a short interview)
+1. In the Claude desktop app, switch to the **Code** tab and start a new session with your **home folder**
+   selected (on Windows, the folder with your name inside `C:\Users`).
+2. Paste the setup message you were sent. Claude explains each step as it goes, and asks permission before it
+   creates files or runs anything: during setup, click **Allow**. If a GitHub sign-in window appears, sign in.
+3. When setup finishes, Claude interviews you for about 15 minutes so it knows who you are, what you're working
+   on, and how you like to work. Everything it learns goes into one file you can read and change.
 
-1. Open the Claude desktop app and switch to the **Code** tab.
-2. Start a new session and choose your **home folder** as the folder to work in (on Windows that's the one
-   with your name, inside `C:\Users`).
-3. Copy the setup message you were sent (it already has your kit link in it) and paste it in.
-4. Claude will ask permission before it creates files or runs anything. During setup that's normal: read
-   what it says and click **Allow**. If a GitHub sign-in window pops up, sign in.
-5. When setup is done, Claude will interview you for about 15 minutes so it gets to know you.
+## How it works
 
-## After setup
+- **Your AI folder.** Setup creates a folder called `AI` in your home folder. `AI/CLAUDE.md` is your profile
+  plus a handful of house rules (explain the plan first, cite sources, leave a gap rather than guess).
+  Claude reads it at the start of every conversation.
+- **Projects.** Each project gets its own folder under `AI/projects/`, with its goal, a progress log, a
+  decisions log and a feedback file. A project you share with someone is backed up to GitHub, and each of you
+  works on your own computer.
+- **Continuity.** Start each session with your `AI` folder, or a project folder, selected. Claude opens with
+  where you left off. Say **"let's wrap up"** at the end, and it saves progress, decisions and lessons.
+- **Research.** Say **"research ..."** for careful work with sources rated for trustworthiness, saved as notes
+  so you never look the same thing up twice.
 
-- Start each session with your `AI` folder selected, or a project folder inside it when you're working on
-  that project.
-- Talk in plain words. A few phrases that unlock your tools: **"research ..."**, **"let's wrap up"**,
-  **"start a new project"**, **"check my newsletters"**, **"show me my profile"**, **"update my kit"**.
-- Say **"let's wrap up"** at the end of a session. That's what lets Claude pick up where you left off.
-- **When to click Deny:** after setup, if Claude asks to send an email, post something, or open a website
-  you didn't ask about, click **Deny** and ask why. Reading websites during research you asked for is fine to
-  allow.
+Other phrases that work: **"start a new project"**, **"join a shared project"**, **"check my newsletters"**,
+**"show me my profile"**, **"update my kit"**. Your full list of tools is at the bottom of `AI/CLAUDE.md`.
+
+## Good to know
+
+- **When to click Deny:** after setup, if Claude asks to send an email, post something, or open a website you
+  didn't ask about, click **Deny** and ask why. Backing up a shared project to GitHub and reading websites
+  during research you asked for are fine to allow; Claude will say when to expect those.
+- **Connected email:** Claude can never send, delete or change anything in a connected Gmail inbox; the kit
+  blocks it. The newsletter tool is meant for an inbox used only for subscriptions, and it asks first if the
+  connected inbox looks personal.
 - **If Claude says you've reached your limit:** nothing is lost. It resets at the time shown. When you come
   back, say "let's wrap up" if you didn't get to before.
-- If Claude's app asks whether to allow using files from your AI folder, say yes.
-- Everything Claude knows about you is in `AI/CLAUDE.md`. Just ask "show me my profile" or "change my profile
-  to say..." (or open the file in a text editor such as Notepad or TextEdit).
+- **If Claude's app asks whether to allow using files from your AI folder,** say yes.
+
+## If you haven't set things up yet
+
+- **Git:** Windows: install "Git for Windows" from git-scm.com with the default options, then close and
+  reopen the Claude app. Mac: nothing now, unless your kit link is private; then install "Git Credential
+  Manager" for Mac first.
+- **Claude:** sign up for Claude Pro at claude.ai, then download the desktop app from claude.ai/download.
+- **GitHub (only for shared projects):** create a free account at github.com. GitHub may ask you to set up a
+  second way to confirm it's you; that's normal. Accept any invitation email within a week.
