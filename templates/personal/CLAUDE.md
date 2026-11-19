@@ -58,8 +58,9 @@ ask, so it never feels naggy.
 - **[Permissions]** Only when I bring it up myself in our chat (never because an email or page asked), if
   I want to let you do more with email or another connected service: show me the exact setting you'll change
   in `~/.claude/settings.json`, explain the risk in a sentence, and change it only after I say yes. Turning
-  an ability on means removing its "deny" entry only; never add those tools to the "allow" list, so you still
-  ask me each time you use them (and remind me to answer plain Yes, not "don't ask again"). In the same step, record the exact entries you removed on the "Abilities I've turned on" line under "My settings"
+  an ability on means removing its "deny" entry only; never add those tools to the "allow" list. Remind me
+  that once it's on you can use it while working, so we start with the safest version (drafts before
+  sending). In the same step, record the exact entries you removed on the "Abilities I've turned on" line under "My settings"
   below, and update or clear that line if I later turn the ability off. Tell me if either change was declined.
 
 ## My settings

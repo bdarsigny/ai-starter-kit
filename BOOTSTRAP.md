@@ -76,6 +76,7 @@ them, and don't add an entry twice):
     ]
   },
   "permissions": {
+    "defaultMode": "auto",
     "allow": [
       "Bash(date)",
       "Bash(bash \"$HOME/.claude/hooks/ai-kit/session-start.sh\")",
@@ -112,7 +113,9 @@ them, and don't add an entry twice):
 }
 ```
 
-What this does, to explain in plain words: the startup check runs at the start of each conversation; the
+What this does, to explain in plain words: new conversations start in **auto mode**, where a built-in safety
+check reviews each step instead of asking them to approve every action (so building things doesn't mean
+clicking Allow all day); the startup check runs at the start of each conversation; the
 "allow" list lets Claude do the kit's routine, harmless steps without asking every time (checking the date,
 updating their notes and progress files, web searches); the "ask" list means Claude always checks with them
 before changing their profile, their lessons, any project's main instructions, the kit itself, or Claude's own settings; the
@@ -125,6 +128,10 @@ If AI_HOME is NOT `~/AI`, also change every `~/AI` in these rules to the real AI
 absolute rule path with two leading slashes (Windows: `//c/AI-files/AI/**`; Mac: `//Users/name/AI-files/AI/**`), and add
 `"env": { "AI_KIT_HOME": "<AI_HOME with forward slashes>" }` at the top level, so the startup check and
 every tool use the right folder.
+
+The "deny" and "ask" rules hold in every mode, including auto, which is what keeps the important blocks in
+place. If the person's Claude plan doesn't offer auto mode (it won't show in the mode menu), change
+`"defaultMode"` to `"acceptEdits"` instead: file edits then go through without asking, and other steps ask.
 
 Check the file is still valid JSON afterward. Then test the startup check: from inside AI_HOME, run
 `bash "$HOME/.claude/hooks/ai-kit/session-start.sh"`. It should print a short note that includes

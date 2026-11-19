@@ -6,6 +6,9 @@ permissions change (update-kit merges added entries and removes entries listed h
 
 ## 0.2.0 (2026-11-18)
 
+- Permissions change: new conversations start in auto mode ("defaultMode": "auto"), so building doesn't mean
+  approving every action. Deny and ask rules still hold in every mode. Falls back to acceptEdits where auto
+  isn't offered.
 - Research is now kept like a small knowledge base: each topic folder has a running SUMMARY.md, one note per
   question in notes/, and one file per source in sources/ (reused across notes), plus a research INDEX.md
   listing topics.
