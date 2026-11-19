@@ -5,7 +5,9 @@ jobs:
     strategy:
       fail-fast: false
       matrix:
-        os: [windows-latest, macos-latest]
+        # macOS runners are often unavailable on free GitHub (jobs get cancelled for capacity); the Mac path
+        # (bash 3.2) is tested locally instead. Ubuntu covers general bash portability.
+        os: [windows-latest, ubuntu-latest]
     runs-on: ${{ matrix.os }}
     defaults:
       run:
