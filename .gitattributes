@@ -1,3 +1,4 @@
 # Keep Unix line endings everywhere: Git for Windows' default (core.autocrlf=true) would otherwise check out
 # the .sh hooks with CRLF, which bash can't run.
 * text=auto eol=lf
+*.docx binary

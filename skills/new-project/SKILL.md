@@ -19,11 +19,15 @@ that names other people, ask whether one of those people has already started it;
 1. **Talk it through briefly** (one question at a time): what's the project, what would "done" or "going
    well" look like, who's involved, and is it just for them or shared with someone? If they have a project
    brief, ask where the file is (an email attachment is usually in Downloads), read it, and use it as the
-   background; confirm it with them rather than re-asking what it already answers.
+   background; confirm it with them rather than re-asking what it already answers. A Word file (`.docx`)
+   can't be read directly: get its text with `bash "<full AI path>/.kit/tools/docx-to-text.sh" "<file>"`. If
+   that fails, ask them to open the file in Word, choose File > Save As, pick "Plain Text (*.txt)", and give
+   you the new file instead.
 2. **Pick a short folder name** together (lowercase, dashes, no spaces), for example `garden-plan`.
 3. **Create the folder** `AI/projects/<name>/` by copying the templates from `AI/.kit/templates/project/`:
    `CLAUDE.md`, `PROGRESS.md`, `DECISIONS.md`, `FEEDBACK.md`, plus a `research/` folder whose `INDEX.md` contains the single line
-   `# Research topics`. If there's a brief, copy it into the project as `BRIEF.md` unchanged.
+   `# Research topics`. If there's a brief, save it into the project as `BRIEF.md` with its
+   wording unchanged (for a Word or text file, save the text with its headings marked `##` and lists as `-`).
 4. **Fill in the placeholders** in those files from the conversation, in the person's words:
    - `{{PROJECT_NAME}}`, `{{GOAL}}`, `{{BACKGROUND}}` (a short summary; if there's a `BRIEF.md`, end with
      "More detail in BRIEF.md"), `{{PEOPLE}}`.

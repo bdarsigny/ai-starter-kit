@@ -4,6 +4,12 @@ Newest first. The update-kit tool reads this to tell people what's new. Call out
 change (templates are never overwritten in a person's folder; update-kit offers the change instead) and any
 permissions change (update-kit merges added entries and removes entries listed here as dropped).
 
+## 0.2.1 (2026-11-23)
+
+- New: "start a new project" can read a project brief sent as a Word file (.docx). A small helper
+  (tools/docx-to-text.sh) pulls out the text, and the brief is saved in the project as BRIEF.md. No template
+  or permissions change.
+
 ## 0.2.0 (2026-11-18)
 
 - Permissions change: new conversations start in auto mode ("defaultMode": "auto"), so building doesn't mean
