@@ -4,6 +4,11 @@ Newest first. The update-kit tool reads this to tell people what's new. Call out
 change (templates are never overwritten in a person's folder; update-kit offers the change instead) and any
 permissions change (update-kit merges added entries and removes entries listed here as dropped).
 
+## 0.2.3 (2026-11-24)
+
+- The interview now asks, separately from the project question, what else they might want to use Claude
+  for, and (with their OK) parks those ideas in IDEAS.md. No template or permissions change.
+
 ## 0.2.2 (2026-11-24)
 
 - The get-to-know-you interview now asks what they would like to learn or get better at with Claude's help

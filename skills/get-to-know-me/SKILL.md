@@ -38,6 +38,10 @@ Their AI folder is `AI_KIT_HOME` if that's set (check with `echo "$AI_KIT_HOME"`
 **What they want from AI**
 - What made them interested in trying this. Any project they have in mind (if so, note it; the project gets
   its own setup later with new-project).
+- Then, as its own question: beyond that project, what else they might want to use Claude for, at home, in
+  work or volunteering, or for a hobby or something they've been curious about. Many people come in for one
+  project but have other ideas; this is where those surface. Note them under "What I'm working on and
+  interested in", and with their OK add each idea as a line in `AI/IDEAS.md` so it isn't lost.
 - What they've used AI for before, if anything, and what they thought of it.
 - Anything that makes them wary or skeptical. Take this seriously; it tells you how to earn trust.
 - Anything they'd like to learn or get better at with Claude's help. This is about skills, not another
