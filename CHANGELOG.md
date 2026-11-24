@@ -4,6 +4,12 @@ Newest first. The update-kit tool reads this to tell people what's new. Call out
 change (templates are never overwritten in a person's folder; update-kit offers the change instead) and any
 permissions change (update-kit merges added entries and removes entries listed here as dropped).
 
+## 0.2.2 (2026-11-24)
+
+- The get-to-know-you interview now asks what they would like to learn or get better at with Claude's help
+  (skills, not another project), and records it so later conversations can explain or let them try a step.
+  No template or permissions change. Existing profiles are unchanged; say "update my profile" to add it.
+
 ## 0.2.1 (2026-11-23)
 
 - New: "start a new project" can read a project brief sent as a Word file (.docx). A small helper

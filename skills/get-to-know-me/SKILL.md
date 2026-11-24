@@ -40,6 +40,11 @@ Their AI folder is `AI_KIT_HOME` if that's set (check with `echo "$AI_KIT_HOME"`
   its own setup later with new-project).
 - What they've used AI for before, if anything, and what they thought of it.
 - Anything that makes them wary or skeptical. Take this seriously; it tells you how to earn trust.
+- Anything they'd like to learn or get better at with Claude's help. This is about skills, not another
+  project: for example getting comfortable with AI, checking sources, organizing notes, or building something.
+  If they named a project above, ask what they'd like to learn along the way. Record it under "How I like to
+  work with Claude" in a form every later conversation can act on, for example "I want to get better at
+  checking sources: when a task involves that, explain what you're doing or let me try a step."
 
 **How they like to work**
 - How much explanation they want: just the answer, or the reasoning too?
